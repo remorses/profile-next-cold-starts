@@ -16,7 +16,7 @@ Add a `vercel.json` in your Next.js app directory top level with the following c
     "builds": [
         {
             "src": "package.json",
-            "use": "https://debug-next-cold-starts.vercel.app/builder.tgz"
+            "use": "https://profile-next-cold-starts.vercel.app/builder.tgz"
         }
     ]
 }
