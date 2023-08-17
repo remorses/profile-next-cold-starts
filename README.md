@@ -2,7 +2,7 @@
     <br/>
     <br/>
     <br/>
-    <h3>Next.js cold start profiling for the masses</h3>
+    <p>Next.js cold start profiling for the masses</p>
     <br/>
     <br/>
 </div>
