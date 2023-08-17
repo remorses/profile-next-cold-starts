@@ -9,7 +9,7 @@
 
 ## Usage
 
-Add a `vercel.json` in your app directory with the following contents:
+Add a `vercel.json` in your Next.js app directory top level with the following contents:
 
 ```json
 {
