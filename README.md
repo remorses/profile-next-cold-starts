@@ -29,3 +29,7 @@ After you download the profile, you can use [trace.cafe](https://trace.cafe) to 
 ## How It Works
 
 This repository contains a fork for the Vercel builder, the `server-launcher.ts` file has been modified to add the profiling code.
+
+## Example
+
+![](./example-flamegraph.png)
