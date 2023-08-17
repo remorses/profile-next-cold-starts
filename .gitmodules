@@ -1,0 +1,3 @@
+[submodule "vercel"]
+	path = vercel
+	url = https://github.com/remorses/vercel
