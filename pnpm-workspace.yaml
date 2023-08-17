@@ -1,2 +1,5 @@
 packages:
   - new-package-template
+  - 'vercel'
+  - 'vercel/packages/*'
+  - "vercel/internals/*"

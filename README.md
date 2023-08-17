@@ -7,6 +7,17 @@
     <br/>
 </div>
 
-
 ## Usage
 
+Add a `vercel.json` in your app directory with the following contents:
+
+```json
+{
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "https://ucarecdn.com/0cb929e7-4a72-4f85-9134-ad4c274e1acf/"
+        }
+    ]
+}
+```

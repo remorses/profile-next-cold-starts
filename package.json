@@ -2,10 +2,7 @@
     "name": "root",
     "private": true,
     "scripts": {
-        "test": "NODE_ENV=test vitest",
-        "watch": "pnpm -r watch",
-        "build": "pnpm -r build",
-        "release": "pnpm build && changeset"
+        "build": "export NODE_OPTIONS=--openssl-legacy-provider && cd vercel && pnpm build && cd packages/next && pnpm build && pnpm pack && mv *.tgz ../../../assets/public/builder.tgz "
     },
     "devDependencies": {
         "@changesets/cli": "^2.26.2",
