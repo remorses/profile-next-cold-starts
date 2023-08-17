@@ -25,3 +25,7 @@ Add a `vercel.json` in your app directory with the following contents:
 After you deploy your application, you can append `?vercel-profile-cpu` to an url to download the cpu profile and `?vercel-profile-require` to download a profile of all`require` calls (which is usually what causes long cold starts)
 
 After you download the profile, you can use [trace.cafe](https://trace.cafe) to analyze it or you can also use the VSCode built in visualizer, simply opening the file in VSCode.
+
+## How It Works
+
+This repository contains a fork for the Vercel builder, the `server-launcher.ts` file has been modified to add the profiling code.
