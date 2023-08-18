@@ -38,7 +38,7 @@ The downloaded `.cpuprofile` file will end with `hot` or `cold` based on wether 
 
 ## Analyzing the profiles
 
-After you download the profile, you can use [trace.cafe](https://trace.cafe) to analyze it or you can also use the VSCode built in visualizer, simply drag and drop it into VSCode.
+After you download the profile, you can use [DevTools Timeline Viewer](https://chromedevtools.github.io/timeline-viewer/) to analyze it or you can also use the VSCode built in visualizer, simply drag and drop it into VSCode.
 
 ## How It Works
 
