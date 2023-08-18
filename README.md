@@ -9,7 +9,7 @@
 
 ## Usage
 
-Add a `vercel.json` in your Next.js app directory top level with the following contents:
+Add a `vercel.json` in your Next.js folder (next to `package.json`) with the following contents:
 
 ```json
 {
@@ -22,11 +22,23 @@ Add a `vercel.json` in your Next.js app directory top level with the following c
 }
 ```
 
+## Downloading the cold starts profiles
+
 After you deploy your application, you can append `?vercel-profile-cpu` to an url to download the cpu profile and `?vercel-profile-require` to download a profile of all`require` calls (which is usually what causes long cold starts).
 
-The file will end with `hot` or `cold` based on wether the function was hot (already booted) or cold.
+For example:
 
-After you download the profile, you can use [trace.cafe](https://trace.cafe) to analyze it or you can also use the VSCode built in visualizer, simply opening the file in VSCode.
+```
+https://my-app.vercel.app/api/auth?vercel-profile-cpu
+
+https://my-app.vercel.app/api/auth?vercel-profile-require
+```
+
+The downloaded `.cpuprofile` file will end with `hot` or `cold` based on wether the function was hot (already booted) or cold.
+
+## Analyzing the profiles
+
+After you download the profile, you can use [trace.cafe](https://trace.cafe) to analyze it or you can also use the VSCode built in visualizer, simply drag and drop it into VSCode.
 
 ## How It Works
 
